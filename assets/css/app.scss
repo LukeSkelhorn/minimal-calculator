@@ -1,0 +1,187 @@
+:root {
+  font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sum {
+  grid-area: sum;
+  height: 8.7rem;
+  padding-right: 2.75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-transform: lowercase;
+}
+.answer {
+  grid-area: answer;
+  height: 6rem;
+  color: #e0e0e0;
+  font-size: 2.75rem;
+  padding-right: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.del {
+  grid-area: del;
+  border-right: solid 1px #4e4e4e;
+}
+.percent {
+  grid-area: percent;
+  border-right: solid 1px #4e4e4e;
+}
+.slash {
+  grid-area: slash;
+}
+.seven {
+  grid-area: seven;
+  border-right: solid 1px #4e4e4e;
+}
+.eight {
+  grid-area: eight;
+  border-right: solid 1px #4e4e4e;
+}
+.nine {
+  grid-area: nine;
+  border-right: solid 1px #4e4e4e;
+}
+.astricts {
+  grid-area: astricts;
+}
+.four {
+  grid-area: four;
+  border-right: solid 1px #4e4e4e;
+}
+.five {
+  grid-area: five;
+  border-right: solid 1px #4e4e4e;
+}
+.six {
+  grid-area: six;
+  border-right: solid 1px #4e4e4e;
+}
+.dash {
+  grid-area: dash;
+}
+.one {
+  grid-area: one;
+  border-right: solid 1px #4e4e4e;
+}
+.two {
+  grid-area: two;
+  border-right: solid 1px #4e4e4e;
+}
+.three {
+  grid-area: three;
+  border-right: solid 1px #4e4e4e;
+}
+.plus {
+  grid-area: plus;
+}
+.dot {
+  grid-area: dot;
+  border-right: solid 1px #4e4e4e;
+}
+.zero {
+  grid-area: zero;
+  border-right: solid 1px #4e4e4e;
+}
+.equals {
+  grid-area: equals;
+  height: 5rem;
+  border-top: solid 1px #4e4e4e;
+  cursor: pointer;
+  .box {
+    color: #504f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ebca62;
+    border-radius: 1.4rem 0 1.4rem 0;
+    &:hover {
+      color: white;
+    }
+    &:active {
+      background: #f3c84c;
+      color: white;
+    }
+  }
+}
+
+.del,
+.percent,
+.slash,
+.seven,
+.eight,
+.nine,
+.astricts,
+.four,
+.five,
+.six,
+.dash,
+.one,
+.two,
+.three,
+.plus,
+.dot,
+.zero {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px #4e4e4e;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    box-shadow: inset 0px 0px 70px -61px white;
+  }
+
+  &:active {
+    background: #aaaaaa;
+    color: white;
+  }
+}
+
+.calculator {
+  width: 22.4rem;
+  height: 40rem;
+  background: #333333;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 40px -19px black;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'sum sum sum sum'
+      'answer answer answer answer'
+      'del del percent slash'
+      'seven eight nine astricts'
+      'four five six dash'
+      'one two three plus'
+      'dot zero equals equals';
+  }
+}

@@ -1,0 +1,315 @@
+:root {
+  font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sum {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: sum;
+  height: 8.7rem;
+  padding-right: 2.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-transform: lowercase;
+}
+
+.answer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: answer;
+  height: 6rem;
+  color: #e0e0e0;
+  font-size: 2.75rem;
+  padding-right: 2.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.del {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: del;
+  border-right: solid 1px #4e4e4e;
+}
+
+.percent {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: percent;
+  border-right: solid 1px #4e4e4e;
+}
+
+.slash {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: slash;
+}
+
+.seven {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: seven;
+  border-right: solid 1px #4e4e4e;
+}
+
+.eight {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: eight;
+  border-right: solid 1px #4e4e4e;
+}
+
+.nine {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: nine;
+  border-right: solid 1px #4e4e4e;
+}
+
+.astricts {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: astricts;
+}
+
+.four {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: four;
+  border-right: solid 1px #4e4e4e;
+}
+
+.five {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: five;
+  border-right: solid 1px #4e4e4e;
+}
+
+.six {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: six;
+  border-right: solid 1px #4e4e4e;
+}
+
+.dash {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: dash;
+}
+
+.one {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: one;
+  border-right: solid 1px #4e4e4e;
+}
+
+.two {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: two;
+  border-right: solid 1px #4e4e4e;
+}
+
+.three {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: three;
+  border-right: solid 1px #4e4e4e;
+}
+
+.plus {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: plus;
+}
+
+.dot {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: dot;
+  border-right: solid 1px #4e4e4e;
+}
+
+.zero {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: zero;
+  border-right: solid 1px #4e4e4e;
+}
+
+.equals {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: equals;
+  height: 5rem;
+  border-top: solid 1px #4e4e4e;
+  cursor: pointer;
+}
+
+.equals .box {
+  color: #504f4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #ebca62;
+  border-radius: 1.4rem 0 1.4rem 0;
+}
+
+.equals .box:hover {
+  color: white;
+}
+
+.equals .box:active {
+  background: #f3c84c;
+  color: white;
+}
+
+.del,
+.percent,
+.slash,
+.seven,
+.eight,
+.nine,
+.astricts,
+.four,
+.five,
+.six,
+.dash,
+.one,
+.two,
+.three,
+.plus,
+.dot,
+.zero {
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: solid 1px #4e4e4e;
+  cursor: pointer;
+}
+
+.del:hover,
+.percent:hover,
+.slash:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.astricts:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.dash:hover,
+.one:hover,
+.two:hover,
+.three:hover,
+.plus:hover,
+.dot:hover,
+.zero:hover {
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 70px -61px white;
+          box-shadow: inset 0px 0px 70px -61px white;
+}
+
+.del:active,
+.percent:active,
+.slash:active,
+.seven:active,
+.eight:active,
+.nine:active,
+.astricts:active,
+.four:active,
+.five:active,
+.six:active,
+.dash:active,
+.one:active,
+.two:active,
+.three:active,
+.plus:active,
+.dot:active,
+.zero:active {
+  background: #aaaaaa;
+  color: white;
+}
+
+.calculator {
+  width: 22.4rem;
+  height: 40rem;
+  background: #333333;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0px 0px 40px -19px black;
+          box-shadow: 0px 0px 40px -19px black;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.calculator .grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'sum sum sum sum' 'answer answer answer answer' 'del del percent slash' 'seven eight nine astricts' 'four five six dash' 'one two three plus' 'dot zero equals equals';
+}
+/*# sourceMappingURL=app.css.map */

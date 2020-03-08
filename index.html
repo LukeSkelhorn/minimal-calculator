@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="grid-container">
+          <div class="sum" id="sum"></div>
+          <div class="answer" id="answer"></div>
+          <div class="del" onclick="calButton('del')">del</div>
+          <div class="percent" onclick="calButton('%')">%</div>
+          <div class="slash" onclick="calButton('/')">/</div>
+          <div class="seven" onclick="calButton(7)">7</div>
+          <div class="eight" onclick="calButton(8)">8</div>
+          <div class="nine" onclick="calButton(9)">9</div>
+          <div class="astricts" onclick="calButton('*')">*</div>
+          <div class="four" onclick="calButton(4)">4</div>
+          <div class="five" onclick="calButton(5)">5</div>
+          <div class="six" onclick="calButton(6)">6</div>
+          <div class="dash" onclick="calButton('-')">-</div>
+          <div class="one" onclick="calButton(1)">1</div>
+          <div class="two" onclick="calButton(2)">2</div>
+          <div class="three" onclick="calButton(3)">3</div>
+          <div class="plus" onclick="calButton('+')">+</div>
+          <div class="dot" onclick="calButton('.')">.</div>
+          <div class="zero" onclick="calButton(0)">0</div>
+          <div class="equals" onclick="calculate()">
+            <div class="box">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
